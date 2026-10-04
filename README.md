@@ -6,15 +6,19 @@
 [![Play on Itch.io](https://img.shields.io/badge/Itch.io-Download_App-FF0B3A?style=for-the-badge&logo=itch.io&logoColor=white)](https://polarbread.itch.io/quizator)
 [![Platform](https://img.shields.io/badge/Platform-Windows-blue?style=for-the-badge&logo=windows)](https://polarbread.itch.io/quizator)
 
-![🌟 Screenshots](assets/screenshot.png)
-<p align="center"> <img src="assets/gameplay.png" width="48%" alt="Gameplay" /> <img src="assets/mod_editor.png" width="48%" alt="Character Editor" /> </p>
+<p align="center">
+  <img src="assets/menu.png" width="32%" alt="Main Menu" />
+  <img src="assets/gameplay.png" width="32%" alt="Gameplay & Combat" />
+  <img src="assets/mod_editor.png" width="32%" alt="Character & Mod Editor" />
+</p>
+
 ---
 
 ## 📌 Overview
 
-**Testownixator!! || QuizBattler** is a desktop study application designed to combat study fatigue during exam preparation. Instead of traditional flashcards, the app embeds you typical study workflow into an animated battles.
+**Testownixator!! || QuizBattler** is a desktop study application designed to combat study fatigue during exam preparation. Instead of traditional static flashcards, the app embeds typical study workflows into animated battle encounters.
 
-Built with user-experience and customization in mind, the application supports legacy question bank formats, custom user mods, and intuitive desktop window controls.
+Built with user experience and customization in mind, the application supports legacy question bank formats, custom user mods, and intuitive desktop window controls.
 
 ---
 
@@ -22,14 +26,14 @@ Built with user-experience and customization in mind, the application supports l
 
 ### 🎮 Gamified Exam Drilling
 * **Combat-Driven Learning:** Questions power real-time battle interactions. Correct answers trigger character action animations and sound effects, turning exam sets into boss fights.
-* **Custom Character & Asset Modding:** Mod support allowing users to load custom sprites and sounds for opponents.
+* **Custom Character & Asset Modding:** Mod support allowing users to load custom sprites and soundpacks for opponents and player characters.
 
 ### 📄 Interoperability & File Support
-* **Testownik Compatibility:** Native parser support for modern json format as well as legacy **testownik** files, ensuring zero migration friction for existing question banks.
+* **Testownik Compatibility:** Native parser support for modern JSON formats as well as legacy **Testownik** files, ensuring zero migration friction for existing question banks.
 * **In-App Quiz Creator & Importer:** Built-in editor to create, edit, or import text-based flashcard sets and share them with peers.
 
 ### 💻 Custom UX & Window Management
-* **Linux-Style Window Control:** Implements ***alt + middle-mouse / right-mouse*** drag-and-resize mechanics directly within the application viewport for fast workspace adjustments.
+* **Linux-Style Window Control:** Implements ***Alt + Middle-Mouse / Right-Mouse*** drag-and-resize mechanics directly within the application viewport for fast workspace adjustments.
 
 ---
 
@@ -46,14 +50,13 @@ Built with user-experience and customization in mind, the application supports l
 
 ---
 
-
 ## 🛠️ Architecture & Modding
 
 The project follows a modular structure decoupling question state management from the rendering engine:
 
-* **Parser Engine:** Handles text serialization/deserialization across custom JSON schemes and legacy Testownik file structures.
+* **Parser Engine:** Handles data serialization/deserialization across custom JSON schemes and legacy Testownik file structures.
 * **Asset & Character System:** Features an in-app character creator along with a dynamic asset loading pipeline supporting `.png` graphics, `.mp3` / `.ogg` audio files, and modular sprite configuration.
-* **Battle Controller:** Animates characters and plays sounds after 
+* **Battle Controller:** Animates characters and plays sounds after the user answers a question.
 * **Custom Window Input Handler:** Intercepts mouse events to provide Linux-like window dragging and resizing without relying on default OS borders.
 
 ---
